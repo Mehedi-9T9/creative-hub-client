@@ -1,0 +1,15 @@
+.menuItem::after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 0px;
+    margin-top: 4px;
+    border-radius: 5px;
+    background: transparent;
+    transition: all 0.7s ease;
+}
+
+.menuItem:hover::after {
+    width: 100%;
+    background: white;
+}
