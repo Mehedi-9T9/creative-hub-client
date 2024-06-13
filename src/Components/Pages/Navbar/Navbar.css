@@ -11,5 +11,5 @@
 
 .menuItem:hover::after {
     width: 100%;
-    background: white;
+    background-image: linear-gradient(to right, white, red);
 }
