@@ -1,4 +1,5 @@
-import React from 'react';
+import { Link } from "react-router-dom";
+
 
 const Login = () => {
     return (
@@ -24,6 +25,7 @@ const Login = () => {
                     <button className="btn btn-warning bg-[#111340] text-white font-poppins font-medium">Login</button>
                 </div>
             </form>
+            <p className='text-xl text-[#111340] font-poppins font-medium text-center -mt-5'>New Users <Link to="/rejister"><span className='text-blue-500 font-bold'>Go Rejister</span></Link></p>
         </div>
     );
 };

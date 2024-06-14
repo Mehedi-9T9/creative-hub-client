@@ -13,3 +13,8 @@
     width: 100%;
     background-image: linear-gradient(to right, white, red);
 }
+
+.active {
+    color: green;
+    font-weight: bold;
+}
