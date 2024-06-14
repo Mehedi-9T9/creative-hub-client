@@ -16,10 +16,18 @@ const Bannar = () => {
                     <img src="https://i.ibb.co/YDZ37sB/Frame.png" className='p-20' alt="" />
                 </div>
             </div>
-            <div class="custom-shape-divider-bottom-1718302326">
+            {/* <div className="custom-shape-divider-bottom-1718302326">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+                    <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" className="shape-fill"></path>
                 </svg>
+            </div> */}
+            <div className='flex justify-center items-center gap-x-10 p-10'>
+                <img src="https://i.ibb.co/v4FM3x3/airbnb.png" className='w-52' alt="" />
+                <img src="https://i.ibb.co/X5bpWFn/google.png" className='w-52' alt="" />
+                <img src="https://i.ibb.co/QCW1GJ9/netflix.png" className='w-52' alt="" />
+                <img src="https://i.ibb.co/3kSWzTp/slack.png" className='w-52' alt="" />
+                <img src="https://i.ibb.co/3RdkX9v/uber.png" className='w-52' alt="" />
+
             </div>
         </>
     );
