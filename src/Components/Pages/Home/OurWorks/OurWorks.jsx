@@ -13,7 +13,7 @@ import { Zoom, Navigation, Pagination, Autoplay } from 'swiper/modules';
 
 const OurWorks = () => {
     return (
-        <div className='bg-[#111340] p-20'>
+        <div className='bg-[#111340] p-10 md:p-20 mb-20'>
             <h2 className='text-3xl font-poppins font-bold text-white text-center mb-10'>Here are some of <span className='text-green-500'>our works</span></h2>
             <Swiper
                 style={{
@@ -35,28 +35,28 @@ const OurWorks = () => {
                 className="mySwiper"
             >
                 <SwiperSlide>
-                    <div className="swiper-zoom-container mb-10">
-                        <img src="https://i.ibb.co/MM5S8VX/carousel-1.png" className='h-[300px]' />
+                    <div className="swiper-zoom-container md:mb-10">
+                        <img src="https://i.ibb.co/MM5S8VX/carousel-1.png" className='md:h-[300px]' />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="swiper-zoom-container">
-                        <img src="https://i.ibb.co/t4TW54S/carousel-2.png" className='h-[300px]' />
+                        <img src="https://i.ibb.co/t4TW54S/carousel-2.png" className='md:h-[300px]' />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="swiper-zoom-container">
-                        <img src="https://i.ibb.co/NZ2vdYS/carousel-3.png" className='h-[280px] ' />
+                        <img src="https://i.ibb.co/NZ2vdYS/carousel-3.png" className='md:h-[280px] ' />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="swiper-zoom-container">
-                        <img src="https://i.ibb.co/vq2Zgrd/carousel-4.png" className='h-[300px]' />
+                        <img src="https://i.ibb.co/vq2Zgrd/carousel-4.png" className='md:h-[300px]' />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="swiper-zoom-container">
-                        <img src="https://i.ibb.co/sRrGpp4/carousel-5.png" className='h-[300px]' />
+                        <img src="https://i.ibb.co/sRrGpp4/carousel-5.png" className='md:h-[300px]' />
                     </div>
                 </SwiperSlide>
 

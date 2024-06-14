@@ -1,8 +1,8 @@
-import React from 'react';
+
 
 const Footer = () => {
     return (
-        <div className='flex bg-[#FBD062] p-20'>
+        <div className='md:flex bg-[#FBD062] p-10 md:p-20'>
             <div className='md:w-1/2 md:px-10 space-y-3'>
                 <h2 className='text-3xl font-semibold font-poppins text-[#111340]'>Let us handle your project, professionally.</h2>
                 <p className='text-[#111340] font-poppins'>With well written codes, we build amazing apps for all platforms, mobile and web apps in general.</p>
