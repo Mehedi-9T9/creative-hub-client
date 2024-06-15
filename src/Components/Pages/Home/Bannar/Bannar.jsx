@@ -23,7 +23,7 @@ const Bannar = () => {
                 </svg>
             </div> */}
             <div className='md:flex justify-center items-center md:gap-x-10 p-10 space-y-3 md:space-y-0'>
-                <img src="https://i.ibb.co/v4FM3x3/airbnb.png" className='w-52 p-5' alt="" />
+                <img src="https://i.ibb.co/v4FM3x3/airbnb.png" className='w-52 p-5 drop-shadow-md' alt="" />
                 <img src="https://i.ibb.co/X5bpWFn/google.png" className='w-52 p-5' alt="" />
                 <img src="https://i.ibb.co/QCW1GJ9/netflix.png" className='w-52 p-5' alt="" />
                 <img src="https://i.ibb.co/3kSWzTp/slack.png" className='w-52 p-5' alt="" />

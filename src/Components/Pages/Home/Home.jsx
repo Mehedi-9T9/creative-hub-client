@@ -17,6 +17,7 @@ const Home = () => {
             <OurWorks></OurWorks>
             <SectionTitle heading_1="Clients" heading_2="Feedback"></SectionTitle>
             <Review></Review>
+
             <Footer></Footer>
         </div>
     );
