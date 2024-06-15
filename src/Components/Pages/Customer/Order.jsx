@@ -5,7 +5,7 @@ import { FaFile } from 'react-icons/fa';
 const Order = () => {
     return (
         <div>
-            <CustomerHeading></CustomerHeading>
+            <CustomerHeading heading="Order"></CustomerHeading>
             <div className='md:w-1/2 p-5 md:p-0 md:py-10 md:px-20 mt-5 md:mt-0'>
                 <form className='space-y-3'>
                     <input type="text" placeholder="Your Name / Company Name" className="input input-bordered input-success w-full " />
