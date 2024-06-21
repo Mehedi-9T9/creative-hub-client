@@ -1,14 +1,25 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import './Navbar.css'
+import useAuth from '../../Hooks/useAuth';
 
 
 const Navbar = () => {
+    const { user, setUser } = useAuth()
+    const handleLogout = () => {
+        setUser(null)
+    }
+    console.log(user);
     const navItems = <>
         <NavLink className="menuItem" to="/">Home</NavLink>
         <NavLink className="menuItem" to="/portfolio">Our Portfolio</NavLink>
         <NavLink className="menuItem" to="/team">Our Team</NavLink>
         <NavLink className="menuItem" to="/contract">Contract us</NavLink>
+        {
+            user ? <NavLink className="menuItem" to="/dashboard">Dasboard</NavLink> :
+                null
+
+        }
     </>
     return (
         <div className="navbar bg-[#FBD062] py-5 md:px-20">
@@ -32,7 +43,27 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="ml-24 md:ml-10">
-                <Link to="/login"><a className="btn btn-warning text-white text-lg font-semibold border-none bg-[#111430]">Login</a></Link>
+                {
+                    user ? <div className="dropdown dropdown-end">
+                        <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
+                            <div className="w-10 rounded-full">
+                                <img alt="login user" src={user.photo} />
+                            </div>
+                        </div>
+                        <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li>
+                                <a className="justify-between">
+                                    Profile
+                                    <span className="badge">New</span>
+                                </a>
+                            </li>
+                            <li><a>Settings</a></li>
+                            <li onClick={handleLogout}><a>Logout</a></li>
+                        </ul>
+                    </div> :
+                        <Link to="/login"><a className="btn btn-warning text-white text-lg font-semibold border-none bg-[#111430]">Login</a></Link>
+                }
+
             </div>
         </div>
     );

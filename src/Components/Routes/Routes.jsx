@@ -7,6 +7,10 @@ import Rejister from '../Authentication/Rejister';
 import Dashboard from '../Layout/Dashboard/Dashboard';
 import Order from '../Pages/Customer/Order';
 import ServiceList from '../Pages/Customer/ServiceList';
+import CustomerReview from '../Pages/Customer/CustomerReview';
+import ServicesList from '../Pages/AdminPage/ServicesList';
+import AddServic from '../Pages/AdminPage/AddServic';
+import MakeAdmin from '../Pages/AdminPage/MakeAdmin';
 
 const Routes = createBrowserRouter([
     {
@@ -38,6 +42,20 @@ const Routes = createBrowserRouter([
             {
                 path: "serviceList",
                 element: <ServiceList></ServiceList>
+            }, {
+                path: "review",
+                element: <CustomerReview></CustomerReview>
+            },
+            {
+                path: "servicesList",
+                element: <ServicesList></ServicesList>
+            }, {
+                path: "addService",
+                element: <AddServic></AddServic>
+            },
+            {
+                path: "makeAdmin",
+                element: <MakeAdmin></MakeAdmin>
             }
         ]
     }
